@@ -1,0 +1,10 @@
+# Obsidian — whole config folder: settings, plugins, plugin data, UI state, cache
+.obsidian/
+
+# Obsidian — deleted notes (if "move to .trash" is enabled)
+.trash/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
