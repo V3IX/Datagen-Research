@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Jump diffusion.md",
+                "file": "Validation on historical data.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Jump diffusion"
+              "title": "Validation on historical data"
             }
           },
           {
@@ -218,15 +218,15 @@
   },
   "active": "90357cab2d7ebfac",
   "lastOpenFiles": [
+    "Resampling (boostrap).md",
+    "Regime switching.md",
+    "plain history.md",
+    "Paremetric economic generators.md",
     "overfitting.md",
     "Jump diffusion.md",
     "Validation on historical data.md",
     "CPCV.md",
     "GARCH.md",
-    "Paremetric economic generators.md",
-    "Regime switching.md",
-    "Resampling (boostrap).md",
-    "plain history.md",
     "Untitled",
     "attachements",
     "attachements/Pasted image 20261111000829.png",

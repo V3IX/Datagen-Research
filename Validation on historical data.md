@@ -1,5 +1,5 @@
 
-**Goal:** choose a strategy and estimate how it will perform on unseen data, without the estimate being inflated by [[overfitting]].
+**Goal:** Prepare your historical data, in such way that we get everything out of it - when training strategies, parameters or deep learning. Also it would be great if we checked if strategy is overfit. For details see: [[overfitting]].
 
 **Basic loop:** split history into training windows (fit and select) and testing windows (evaluate). Choose the best strategy whose performance holds on the test windows.
 
