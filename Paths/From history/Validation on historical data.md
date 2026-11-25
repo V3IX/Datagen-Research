@@ -34,9 +34,9 @@ All of these methods reorganise **the same single history**. They reduce selecti
 8. How hard it is to use
 9. Which strategy types it favors or punishes
 10. Which knob controls scenario diversity, and what happens when you turn it up
-<!--co:mwrtp by:me at:2026-11-11T00:32:16.533Z status:open quote:"Input → output"
+<!--co:mwrtp by:me at:2026-11-11T00:32:16.533Z status:resolved quote:"Input → output"
 me (2026-11-11T00:32:16.533Z): input: historical data (no way!!!!)\noutput: maybe-not overfitten strategy
 -->
-<!--co:z0p9z by:me at:2026-11-11T00:33:37.054Z status:open quote:"Assumptions about the data"
+<!--co:z0p9z by:me at:2026-11-11T00:33:37.054Z status:resolved quote:"Assumptions about the data"
 me (2026-11-11T00:33:37.054Z): maches what we will be using strategy on
 -->
