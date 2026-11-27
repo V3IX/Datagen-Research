@@ -1,6 +1,6 @@
-# Datagen — Research
+# FinGen — Research
 
-Research repository for a paper asking: **in which situations does choosing trading strategies on synthetic market data beat choosing them on historical data alone?** The paper is the entry point for Datagen, a synthetic market data product.
+Research repository for a paper asking: **in which situations does choosing trading strategies on synthetic market data beat choosing them on historical data alone?** The paper is the entry point for FinGen, a synthetic market data product.
 
 ## Why this paper
 
