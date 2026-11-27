@@ -12,13 +12,13 @@ The overfitting gap:
 $$\Delta = R(\hat\theta;\, D_{\text{in}}) - \mathbb{E}\big[R(\hat\theta;\, D_{\text{out}})\big]$$
 
 In expectation $\Delta > 0$. It grows with <!--c:rucn7--><!--c:7kcgm-->model flexibility<!--/c:7kcgm--><!--/c:rucn7--> and with the number of <!--c:4xisg-->configurations tried<!--/c:4xisg-->; it shrinks with the amount of data.
-<!--co:4xisg by:me at:2026-11-11T00:03:49.525Z status:open quote:"configurations tried"
+<!--co:4xisg by:me at:2026-11-11T00:03:49.525Z status:resolved quote:"configurations tried"
 me (2026-11-11T00:03:49.525Z): the more, the more overfitten the model is, causing $R(\\hat{\\theta};D_{in})$ to maximize
 -->
 <!--co:rucn7 by:me at:2026-11-11T00:05:24.178Z status:resolved quote:"model flexibility"
 me (2026-11-11T00:05:24.178Z): ?
 -->
-<!--co:7kcgm by:me at:2026-11-11T00:07:11.263Z status:open quote:"model flexibility"
+<!--co:7kcgm by:me at:2026-11-11T00:07:11.263Z status:resolved quote:"model flexibility"
 me (2026-11-11T00:07:11.263Z): ?
 -->
 
@@ -27,7 +27,7 @@ me (2026-11-11T00:07:11.263Z): ?
 A backtest runs a strategy's rules over historical data and records the result the strategy would have produced, e.g. its Sharpe ratio. It is the score $R(\theta;\, D_{\text{out}})$, computed for one strategy.
 
 ​<!--c:0y481-->Overfitting is not limited to training. Choosing the best of many backtests is itself an optimisation over $D_{\text{out}}$.<!--/c:0y481-->
-<!--co:0y481 by:me at:2026-11-11T00:11:38.870Z status:open quote:"Overfitting is not limited to training. Choosing the best of many backtests is itself an optimisation over $D_{\text{in}}$."
+<!--co:0y481 by:me at:2026-11-11T00:11:38.870Z status:resolved quote:"Overfitting is not limited to training. Choosing the best of many backtests is itself an optimisation over $D_{\text{in}}$."
 me (2026-11-11T00:11:38.870Z): interesting problem, when we use training data multiple times (lets say first 3 strategies perform badly, and we must pass them) our test data starts being used more than once, and this contradicts it
 -->
 
@@ -46,7 +46,7 @@ Where $\sqrt{2 \ln K}$ comes from (for standard normals $Z_1, \dots, Z_K$; multi
 This is only the leading-order growth rate. Dropping the factor in step 2 makes it overestimate: for $K = 1000$ it gives $3.72$, while the exact value is $\approx 3.24\,\sigma$. It also assumes the $K$ backtests are independent.
 
 Example: 10 years of data, 1000 tried strategies, no real edge anywhere → the winner shows an annualised Sharpe of about $1.0$. Correction for this: Deflated Sharpe Ratio (Bailey & López de Prado, 2014)<!--c:c7z31-->.<!--/c:c7z31-->
-<!--co:c7z31 by:me at:2026-11-11T00:14:52.317Z status:open quote:"."
+<!--co:c7z31 by:me at:2026-11-11T00:14:52.317Z status:resolved quote:"."
 me (2026-11-11T00:14:52.317Z): by chosing best way of training strategies (chosing parameters) we even do overfitting
 -->
 

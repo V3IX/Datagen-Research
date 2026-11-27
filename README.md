@@ -15,7 +15,7 @@ Synthetic data is the other option: generate many plausible histories (GARCH, re
 
 ## Research question
 
-Compared with selection on historical data (plain history, CPCV, bootstrap), **under which conditions** does selection on synthetic data choose strategies that perform better on held-out real data — and under which does it do worse?
+Compared with selection on historical data (plain history, CPCV, bootstrap), **under which conditions** does selection on synthetic data (and synthetic data creation methods) choose strategies that perform better on held-out real data — and under which does it do worse?
 
 Candidate conditions (hypotheses, to be tested):
 
@@ -25,34 +25,15 @@ Candidate conditions (hypotheses, to be tested):
 - how many strategies are compared, and how flexible they are;
 - which generator is used, and how scenarios are weighted.
 
-## Approach (draft)
-
-1. Choose strategies with each method: plain history, CPCV, bootstrap, synthetic data (several generators and weighting schemes).
-2. Evaluate the chosen strategies on held-out real data, across several markets and time windows.
-3. Compare methods per condition and test whether the differences are significant.
-
 ## Main limitation
 
-A generator only adds what its assumptions add. Where those assumptions are wrong, synthetic data can make selection worse, not better — which is why a large part of these notes is about the generators themselves.
+A generator only adds what its assumptions add. Where those assumptions are wrong, synthetic data can make selection worse, not better — which is why a large part of these notes is about the generators themselves. 
+Generator is based on market data - so its output wont produce anything new - TO CHECK
+Strategies may be overfit to current regime, but this might be intended. If we would be able to train robust strategy, that would survive every market scenario, its return would be lower than strategy that is overfit to current (USA leads, AI bubble ect) regime - TO CHECK
 
 ## Notes
 
-**Validation on historical data** — what is done today, and its limits
-
-- [Overfitting](overfitting.md) — the overfitting gap, selection bias, why finance is especially exposed
-- [Validation on historical data](Validation%20on%20historical%20data.md) — overview of methods
-- [Plain history](plain%20history.md) — single chronological train/test split
-- [CPCV](CPCV.md) — Combinatorial Purged Cross-Validation
-- [Resampling (bootstrap)](Resampling%20(boostrap).md) — reusing data by sampling with replacement
-
-**Parametric generators** — models that produce synthetic price series
-
-- [Parametric economic generators](Paremetric%20economic%20generators.md) — overview and comparison
-- [GARCH](GARCH.md) — time-varying volatility
-- [Regime switching](Regime%20switching.md) — hidden market regimes (calm / crisis)
-- [Jump diffusion](Jump%20diffusion.md) — sudden discontinuous moves (Merton, Kou, Hawkes)
-
-Suggested reading order: top to bottom.
+After reding README, start at [[Problem overview]]
 
 ## Opening the notes
 
@@ -65,4 +46,4 @@ The `.obsidian/` folder is not tracked, so install these plugins yourself after 
 
 ## Status
 
-Work in progress. Research questions and approach are drafts. Notes are written in English; each ends with open questions.
+Work in progress. Research questions and approach are drafts. Notes are written in English.
